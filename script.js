@@ -35,3 +35,17 @@ else{
     text = "good evening";
 }
 console.log(text);
+
+
+const time = new Date().getHours();
+let txt;
+if(time < 10){
+    txt = "good morning";
+}
+else if(time < 20){
+    txt = "good day";
+}
+else{
+    txt = "good night";
+}
+document.getElementById("demo").innerHTML = txt;
